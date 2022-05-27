@@ -7,7 +7,7 @@ export default class Productlist extends Component {
       <div className="container py-5">
         <div className="row d-flex justify-content-center">
           {this.props.productList.map((item, i) => {
-            console.log("du lieu", item);
+            // console.log("du lieu", item);
             return (
               <Productitem
                 handleThemSanPham={this.props.handleThemSanPham}
