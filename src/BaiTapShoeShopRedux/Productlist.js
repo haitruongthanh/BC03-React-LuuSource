@@ -1,15 +1,17 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import Productitem from "./Productitem";
 
-export default class Productlist extends Component {
+class Productlist extends Component {
   render() {
     return (
       <div className="py-5 row">
-        {this.props.productList.map((item, i) => {
+        {/* optional chaining */}
+        {this.props.productList?.map((item, i) => {
           // console.log("du lieu", item);
           return (
             <Productitem
-              handleThemSanPham={this.props.handleThemSanPham}
+              // handleThemSanPham={this.props.handleThemSanPham}
               key={i}
               data={item}
             />
@@ -19,3 +21,9 @@ export default class Productlist extends Component {
     );
   }
 }
+
+let mapStateToProps = (state) => {
+  return { productList: state.shoeShopReducer.productList };
+};
+
+export default connect(mapStateToProps)(Productlist);

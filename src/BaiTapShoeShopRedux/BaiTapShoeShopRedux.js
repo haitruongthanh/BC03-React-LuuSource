@@ -5,7 +5,7 @@ import Productlist from "./Productlist";
 
 export default class BaiTapShoeShopRedux extends Component {
   state = {
-    productList: dataShoeShop,
+    // productList: dataShoeShop,
     gioHang: [],
     isOpenModal: false,
   };
@@ -81,7 +81,7 @@ export default class BaiTapShoeShopRedux extends Component {
         <div className="col-7">
           <Productlist
             handleThemSanPham={this.handleAddToCart}
-            productList={this.state.productList}
+            // productList={this.state.productList}
           />
         </div>
         <div className="col-5 my-5">

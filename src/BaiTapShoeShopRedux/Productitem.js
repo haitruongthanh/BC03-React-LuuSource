@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { ADD_TO_CART } from "./redux/constants/constants";
 
-export default class Productitem extends Component {
+class Productitem extends Component {
   render() {
     // console.log(this.props.data);
     let { name, price, image, shortDescription } = this.props.data; //destructering - es6
@@ -29,3 +31,15 @@ export default class Productitem extends Component {
     );
   }
 }
+
+let mapDispatchToProps = (dispatch) => {
+  return {
+    handleThemSanPham: () => {
+      dispatch({
+        type: ADD_TO_CART,
+      });
+    },
+  };
+};
+
+export default connect(null, mapDispatchToProps)(Productitem);
