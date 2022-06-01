@@ -3,7 +3,7 @@ import Cart from "./Cart";
 import { dataShoeShop } from "./dataShoeShop";
 import Productlist from "./Productlist";
 
-export default class BaiTapShoeShop extends Component {
+export default class BaiTapShoeShopRedux extends Component {
   state = {
     productList: dataShoeShop,
     gioHang: [],

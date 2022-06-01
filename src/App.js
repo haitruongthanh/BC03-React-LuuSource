@@ -1,5 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
+import "antd/dist/antd.css";
+import BaiTapShoeShopRedux from "./BaiTapShoeShopRedux/BaiTapShoeShopRedux";
 
 // import DemoClass from "./DemoComponent/DemoClass";
 // import DemoFunction from "./DemoComponent/DemoFunction";
@@ -10,7 +12,8 @@ import "./App.css";
 // import DemoState from "./DemoState/DemoState";
 // import BaiTapChonXe from "./BaiTapChonXe/BaiTapChonXe";
 // import DemoProps from "./DemoProps/DemoProps";
-import BaiTapShoeShop from "./BaiTapShoeShop/BaiTapShoeShop";
+// import BaiTapShoeShop from "./BaiTapShoeShop/BaiTapShoeShop";
+// import DemoMiniRedux from "./DemoMiniRedux/DemoMiniRedux";
 
 function App() {
   return (
@@ -24,7 +27,9 @@ function App() {
       {/* <DemoState /> */}
       {/* <BaiTapChonXe /> */}
       {/* <DemoProps /> */}
-      <BaiTapShoeShop />
+      {/* <BaiTapShoeShop /> */}
+      {/* <DemoMiniRedux /> */}
+      <BaiTapShoeShopRedux />
     </div>
   );
 }
